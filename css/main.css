@@ -1,0 +1,27 @@
+body {
+  font: 15px/36px "SegoeWP-Light", sans-serif;
+  color: #909090;
+  min-width: 640px;
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 976px;
+  margin: 0 auto;
+}
+
+a {
+  color: #6c6c6c;
+}
+
+a:hover {
+  text-decoration: none;
+}
