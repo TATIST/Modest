@@ -2,7 +2,7 @@
 font-family: 'Quattrocento Sans', sans-serif; */
 
 body {
-  font: 400 16px/26px 'Open Sans', sans-serif;
+  font: 400 16px/26px "Open Sans", sans-serif;
   color: #8d8f92;
 }
 
@@ -22,20 +22,39 @@ a:hover {
 
 .container {
   max-width: 1170px;
-  margin: 0 auto; 
-  padding: 0 15px; 
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.title {
+  text-transform: uppercase;
+  color: #292f36;
+  font: 400 36px/42px "Quattrocento Sans";
+  position: relative;
+  margin-bottom: 47px;
+  margin-left: 24px;
+}
+
+.title:before {
+  content: "";
+  position: absolute;
+  width: 10px;
+  height: 35px;
+  background: #e1e6ea;
+  top: 0;
+  left: -23px;
 }
 
 .header {
   background: #1d2126;
-  padding-top: 31px;
-  padding-bottom: 31px;
-} 
+  padding-top: 20px;
+  padding-bottom: 19px;
+}
 
-.header .container{
+.header .container {
   display: flex;
   justify-content: space-between;
-} 
+}
 
 .header .logo {
   background: url(../images/modest-logo.png);
@@ -44,18 +63,26 @@ a:hover {
   margin: auto 0;
 }
 
+.header a.logo:hover {
+  text-decoration: none;
+}
+
 .header .navigation {
-  font: 600 14px/42px 'Open Sans', sans-serif;
-  margin: 0 10px;
+  font: 600 14px/42px "Open Sans", sans-serif;
+  margin: 0 4px;
   text-transform: uppercase;
   display: flex;
+}
+
+.header .navigation li {
+  margin-left: 16px;
 }
 
 .header .navigation a {
   text-decoration: none;
   color: #a4aead;
   border: 2px solid transparent;
-  padding: 9px 20px;
+  padding: 4px 10px;
 }
 
 .header .navigation a:hover {
@@ -68,4 +95,86 @@ a:hover {
   border: 2px solid #23b7a4;
   border-radius: 4px;
   color: #23b7a4;
+}
+
+.slider-wrapper {
+  background: url(../images/slide-2.png) no-repeat 50%;
+  background-size: cover;
+  height: calc(100vh - 81px);
+}
+
+.slider {
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
+.slide {
+  max-width: 655px;
+  height: 100%;
+}
+
+.slide-description {
+  margin-bottom: 38px;
+}
+
+.slide-title {
+  display: block;
+  font: 400 36px/42px "Quattrocento Sans", sans-serif;
+  color: #fff;
+  text-transform: uppercase;
+  margin-bottom: 17px;
+}
+
+.slide p {
+  display: block;
+  color: #ccd0d7;
+  margin-bottom: 17px;
+}
+
+.slide-buttons {
+  min-height: 44px;
+}
+
+.slide a {
+  display: inline-block;
+  border: 2px solid #fff;
+  border-radius: 4px;
+  color: #fff;
+  text-transform: uppercase;
+  font: 400 14px/28px "Quattrocento Sans", sans-serif;
+  padding: 6px 22px;
+  text-decoration: none;
+  margin-right: 7px;
+}
+
+.slide a:hover {
+  border-color: #23b7a4;
+  background: #23b7a4;
+}
+
+.about-us {
+  margin-top: 80px;
+}
+
+.about-us-content {
+  display: flex;
+  justify-content: space-between;
+}
+
+.about-us-description {
+  width: 60%;
+  padding-right: 15px;
+}
+
+.about-us-description p {
+  margin-bottom: 26px;
+}
+
+.about-us-description strong {
+  font-weight: bold;
+}
+
+.about-us .advantages {
+  width: 40%;
 }
