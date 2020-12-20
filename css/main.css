@@ -132,10 +132,6 @@ a:hover {
   margin-bottom: 17px;
 }
 
-.slide-buttons {
-  min-height: 44px;
-}
-
 .slide a {
   display: inline-block;
   border: 2px solid #fff;
@@ -164,7 +160,7 @@ a:hover {
 
 .about-us-description {
   width: 60%;
-  padding-right: 15px;
+  padding-right: 30px;
 }
 
 .about-us-description p {
@@ -177,4 +173,30 @@ a:hover {
 
 .about-us .advantages {
   width: 40%;
+  margin-top: 9px;
+}
+
+.advantages-item {
+  margin-bottom: 34px;
+  display: flex;
+}
+
+.advantages-item > span {
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  background: #23b7a4;
+  color: #fff;
+  font-size: 19px;
+  padding-left: 17px;
+  padding-right: 17px;
+  margin-right: 19px;
+}
+
+.advantages-title {
+  display: block;
+  font: 400 18px/18px "Quattrocento Sans", sans-serif;
+  color: #292f36;
+  text-transform: uppercase;
+  margin-bottom: 8px;
 }
