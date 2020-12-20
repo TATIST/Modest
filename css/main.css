@@ -29,8 +29,9 @@ a:hover {
 .title {
   text-transform: uppercase;
   color: #292f36;
-  font: 400 36px/42px "Quattrocento Sans";
+  font: 36px/42px "Quattrocento Sans";
   position: relative;
+  margin-top: 80px;
   margin-bottom: 47px;
   margin-left: 24px;
 }
@@ -108,19 +109,49 @@ a:hover {
   align-items: center;
   height: 100%;
 }
+.slider .slick-dots {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  padding-bottom: 22px;
+  padding-right: 15px;
+}
+
+.slider .slick-dots li {
+  float: left;
+  margin-left: 8px;
+}
+
+.slider .slick-dots li button {
+  width: 13px;
+  height: 13px;
+  text-indent: -999999em;
+  cursor: pointer;
+  display: inline-block;
+  border: 2px #fff solid;
+  border-radius: 50%;
+  outline: none;
+  padding: 0;
+  background: none;
+}
+
+.slider .slick-dots li.slick-active button {
+  background: #fff;
+}
 
 .slide {
-  max-width: 655px;
+  max-width: 1170px;
   height: 100%;
 }
 
 .slide-description {
+  width: 655px;
   margin-bottom: 38px;
 }
 
 .slide-title {
   display: block;
-  font: 400 36px/42px "Quattrocento Sans", sans-serif;
+  font: 36px/42px "Quattrocento Sans", sans-serif;
   color: #fff;
   text-transform: uppercase;
   margin-bottom: 17px;
@@ -138,7 +169,7 @@ a:hover {
   border-radius: 4px;
   color: #fff;
   text-transform: uppercase;
-  font: 400 14px/28px "Quattrocento Sans", sans-serif;
+  font: 14px/28px "Quattrocento Sans", sans-serif;
   padding: 6px 22px;
   text-decoration: none;
   margin-right: 7px;
@@ -150,7 +181,8 @@ a:hover {
 }
 
 .about-us {
-  margin-top: 80px;
+  padding-bottom: 97px;
+  border-bottom: 1px solid #dde1e4;
 }
 
 .about-us-content {
@@ -161,6 +193,10 @@ a:hover {
 .about-us-description {
   width: 60%;
   padding-right: 30px;
+}
+
+.about-us-description > div {
+  margin-bottom: 48px;
 }
 
 .about-us-description p {
@@ -195,8 +231,193 @@ a:hover {
 
 .advantages-title {
   display: block;
-  font: 400 18px/18px "Quattrocento Sans", sans-serif;
+  font: 18px/18px "Quattrocento Sans", sans-serif;
   color: #292f36;
   text-transform: uppercase;
   margin-bottom: 8px;
+}
+
+.about-us-description .socials {
+  display: flex;
+}
+
+.about-us-description .socials li {
+  background: #c8cdd0;
+  margin-right: 1px;
+}
+
+.about-us-description .socials li:hover {
+  background: #d0d5d9;
+}
+
+.about-us-description .socials a {
+  display: block;
+  position: relative;
+  width: 60px;
+  height: 60px;
+}
+
+.about-us-description .socials a:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.about-us-description .socials .icon-facebook a:before {
+  background-image: url(../svg/facebook.svg);
+  background-size: 23px;
+}
+
+.about-us-description .socials .icon-twitter a:before {
+  background-image: url(../svg/twitter.svg);
+  background-size: 21px;
+}
+
+.about-us-description .socials .icon-google a:before {
+  background-image: url(../svg/google.svg);
+  background-size: 23px;
+}
+
+.about-us-description .socials .icon-dribbble a:before {
+  background-image: url(../svg/dribbble.svg);
+  background-size: 22px;
+}
+
+.about-us-description .socials .icon-behance a:before {
+  background-image: url(../svg/behance.svg);
+  background-size: 27px;
+}
+
+.team-info {
+  margin-bottom: 70px;
+}
+
+.team-info .team {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -15px;
+}
+
+.team .team-person {
+  width: 25%;
+  padding: 0 15px;
+  margin-bottom: 30px;
+}
+
+.team .team-person figure {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.team .team-person .person-image {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.team .team-person .person-image:before {
+  content: "";
+  background: rgba(255, 255, 255, 0.6);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.2s ease-in-out;
+}
+
+.team .team-person:hover .person-image:before,
+.team .team-person:hover .person-image .socials {
+  opacity: 1;
+  visibility: visible;
+}
+
+.team .team-person .person-image .socials {
+  display: flex;
+  position: absolute;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 0 15px;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.2s ease-in-out;
+}
+
+.team .team-person .socials li {
+  background: #3a454d;
+  margin-right: 1px;
+  margin-bottom: 1px;
+}
+
+.team .team-person .socials li:hover {
+  background: #4e5a62;
+}
+
+.team .team-person .socials a {
+  display: block;
+  position: relative;
+  width: 50px;
+  height: 50px;
+}
+
+.team .team-person .socials a:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.team .team-person .socials .icon-twitter a:before {
+  background-image: url(../svg/twitter.svg);
+  background-size: 21px;
+}
+
+.team .team-person .socials .icon-facebook a:before {
+  background-image: url(../svg/facebook.svg);
+  background-size: 23px;
+}
+
+.team .team-person .socials .icon-linkedin a:before {
+  background-image: url(../svg/linkedin.svg);
+  background-size: 23px;
+}
+
+.team .team-person img {
+  display: block;
+  width: 100%;
+}
+
+.team .team-person figcaption {
+  width: 100%;
+  background: #e1e6ea;
+  padding: 20px 20px 17px;
+  flex-grow: 1;
+}
+
+.team .team-person:hover figcaption,
+.team .team-person:hover span {
+  background: #3a454d;
+  color: #fff;
+}
+
+.team .team-person figcaption span {
+  display: block;
+  text-transform: uppercase;
+  color: #292f36;
+  font: 16px "Quattrocento Sans", sans-serif;
+  margin-bottom: 2px;
+}
+
+.team .team-person figcaption p {
+  font-size: 14px;
+  line-height: 18px;
 }
