@@ -2,7 +2,7 @@
 font-family: 'Quattrocento Sans', sans-serif; */
 
 body {
-  font: 400 16px/26px "Open Sans", sans-serif;
+  font: 300 16px/26px "Open Sans", sans-serif;
   color: #8d8f92;
 }
 
@@ -140,12 +140,11 @@ a:hover {
 }
 
 .slide {
-  max-width: 1170px;
   height: 100%;
 }
 
 .slide-description {
-  width: 655px;
+  max-width: 655px;
   margin-bottom: 38px;
 }
 
@@ -181,7 +180,7 @@ a:hover {
 }
 
 .about-us {
-  padding-bottom: 97px;
+  /* padding-bottom: 47px; */
   border-bottom: 1px solid #dde1e4;
 }
 
@@ -196,7 +195,7 @@ a:hover {
 }
 
 .about-us-description > div {
-  margin-bottom: 48px;
+  margin-bottom: 74px;
 }
 
 .about-us-description p {
@@ -239,6 +238,7 @@ a:hover {
 
 .about-us-description .socials {
   display: flex;
+  margin-bottom: 97px;
 }
 
 .about-us-description .socials li {
