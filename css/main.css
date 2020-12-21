@@ -68,7 +68,16 @@ a:hover {
   text-decoration: none;
 }
 
-.header .navigation {
+.header .navigation-wrapper input {
+  display: none;
+}
+
+.header .navigation-wrapper input[type="checkbox"]:checked ~ ul {
+  visibility: visible;
+  opacity: 1;
+}
+
+.header .navigation-wrapper .navigation {
   font: 600 14px/42px "Open Sans", sans-serif;
   margin: 0 4px;
   text-transform: uppercase;
@@ -141,6 +150,10 @@ a:hover {
 
 .slide {
   height: 100%;
+}
+
+.slick-slide:focus {
+  outline: none;
 }
 
 .slide-description {
@@ -238,7 +251,7 @@ a:hover {
 
 .about-us-description .socials {
   display: flex;
-  margin-bottom: 97px;
+  margin-bottom: 100px;
 }
 
 .about-us-description .socials li {
