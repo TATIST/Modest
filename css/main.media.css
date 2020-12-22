@@ -31,9 +31,11 @@
     position: absolute;
     width: 46px;
     height: 4px;
+    border-radius: 2px;
     top: 12px;
     left: 12px;
     background: #23b7a4;
+    transition: all 0.3s linear;
   }
 
   .header .navigation-wrapper label:after {
@@ -44,6 +46,22 @@
   .header .navigation-wrapper label span {
     top: initial;
     bottom: 23px;
+  }
+
+  .header .navigation-wrapper input[type="checkbox"]:checked + label:before {
+    transform: rotate(45deg);
+    top: 24px;
+    transition: all 0.3s linear;
+  }
+
+  .header .navigation-wrapper input[type="checkbox"]:checked + label:after {
+    transform: rotate(-45deg);
+    top: 24px;
+    transition: all 0.3s linear;
+  }
+
+  .header .navigation-wrapper input[type="checkbox"]:checked + label span {
+    display: none;
   }
 
   .header .navigation-wrapper .navigation {
